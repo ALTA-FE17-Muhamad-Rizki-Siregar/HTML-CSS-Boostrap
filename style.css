@@ -1,57 +1,100 @@
-*, html {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 body {
-    background-color: azure;
+  background: url(gambar/bg-img.jpg);
+  margin: 0;
+  padding: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-nav {
-    background-color: white;
-    display: flex;
-    padding: 1rem 2rem;
-    justify-content: space-between;
+.image {
+  width: 134px;
+  height: 66px;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    padding: 1rem;
-    gap: 2rem;
+.navbar {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 89px;
+  justify-content: space-between;
+  padding: 1rem 9rem;
+  position: sticky;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 17rem;
 }
 
 nav ul li a {
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #191919;
-    font-weight: 600;
-    padding: 10px 0;
-}
-
-nav img {
-    max-width: 50px;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 8px;
+  font-family: "Mulish", sans-serif;
+  color: #19345e;
 }
 
 nav ul li a:hover {
-    border-bottom: 10px solid blue;
-    
+  border-bottom: 1px solid #f47522;
+  color: #f47522;
 }
 
-.menu-icon {
-    font-size: 28px;
-    display: none;
-    
+.konten {
+  display: flex;
 }
 
-@media only screen and (max-width: 768px) {
-    nav ul {
-        display: none;
-    }
-    .menu-icon {
-        display: flex;
-    align-items: center;
-    }
+.photo {
+  width: 355px;
+  height: 355px;
+  border-radius: 50%;
+  margin-top: 170px;
+  margin-bottom: 194px;
+  margin-left: 125px;
+  margin-right: 76px;
+}
+
+.isi {
+  margin-top: 200px;
+  width: 900px;
+  height: 247px;
+}
+
+span {
+  font-family: "Roboto", sans-serif;
+  font-size: 85px;
+  font-weight: bold;
+}
+
+span1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: medium;
+}
+
+span2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  font-weight: medium;
+}
+
+.button {
+  background-color: #f47522;
+  width: 150px;
+  height: 43px;
+  border-radius: 25px;
+}
+
+.button a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: regular;
+  color: white;
 }
