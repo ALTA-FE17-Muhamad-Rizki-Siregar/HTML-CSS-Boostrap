@@ -1,0 +1,217 @@
+/* Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* General Styles */
+body {
+  background: url(gambar/bg-img.jpg);
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  display: grid;
+  grid-template-areas: "header header" "aside main";
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr 9fr;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Header Styles */
+nav {
+  background: white;
+  grid-area: header;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav img {
+  width: 134px;
+  height: 66px;
+  object-fit: contain;
+}
+
+.tombol {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #19345e;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #f47522;
+  color: #f47522;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+  color: #19345e;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Aside Styles */
+aside {
+  background: rgba(0, 0, 0, 0);
+  grid-area: aside;
+  width: 100%;
+  text-align: center;
+}
+
+aside img {
+  width: 100%;
+  max-width: 355px;
+  height: auto;
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+/* Main Styles */
+main {
+  background: rgba(0, 0, 0, 0);
+  grid-area: main;
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+main span1,
+main span,
+main span2 {
+  font-family: "Roboto", sans-serif;
+  color: #19345e;
+}
+
+main span1 {
+  font-size: 1.5rem;
+  font-weight: medium;
+}
+
+main span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+main span2 {
+  font-size: 1.5rem;
+  font-weight: medium;
+}
+
+main button {
+  background-color: #f47522;
+  width: 150px;
+  height: 43px;
+  border-radius: 25px;
+  margin-top: 2rem;
+}
+
+main button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "aside";
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 89px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .tombol {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .bar {
+    display: block;
+  }
+
+  .bar:nth-child(2),
+  .bar:nth-child(3) {
+    margin: 6px 0;
+  }
+}
+
+/* Additional Media Queries for Tablet and Mobile */
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 0.5rem;
+  }
+
+  main {
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav img {
+    width: 100px;
+    height: 50px;
+  }
+
+  aside img {
+    padding: 1rem;
+  }
+
+  main span1 {
+    font-size: 1rem;
+  }
+
+  main span {
+    font-size: 2rem;
+  }
+
+  main span2 {
+    font-size: 1rem;
+  }
+
+  main button {
+    width: 120px;
+    height: 35px;
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+      /* cssnya */
+      body {
+        margin: 0; /* Reset margin to eliminate default spacing */
+        padding: 0; /* Reset padding to eliminate default spacing */
+        overflow-x: hidden; /* Hide horizontal overflow */
+      }
+
+      .left-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url("gambar/charles-rRWiVQzLm7k-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        color: #1803fa; /
+      }
+
+      .left-column img {
+        margin-bottom: 20px;
+      }
+
+      .right-column {
+        background-color: #fff; /* Warna putih pada sisi kanan */
+        height: 100vh; /* Set height to full viewport height */
+        padding: 20px; /* Tambahkan padding untuk memberikan ruang di dalam right-column */
+      }
+
+      /* Style for the form within the right column */
+      .right-column form {
+        max-width: 400px; /* Sesuaikan lebar formulir sesuai kebutuhan */
+        margin: 0 auto; /* Pusatkan formulir di dalam right-column */
+      }
+
+      .right-column form label {
+        color: #333; /* Warna teks label */
+      }
+
+      .right-column form select,
+      .right-column form textarea,
+      .right-column form input {
+        margin-bottom: 15px; /* Sesuaikan jarak antar elemen formulir */
+      }
+
+
+      .right-column form button {
+        background-color: #ff8c00;
+        border-radius: 5px;
+        border: 2px solid #f47522; /
+      }
+
+
+      .right-column h4,
+      .right-column p {
+        color: #0000ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Bagian Kiri - Logo dan Gambar -->
+        <div class="col-md-6 left-column">
+          <img src="gambar/logo-ALTA-v2.png" alt="Logo" class="img-fluid" />
+        </div>
+
+        <!-- Bagian Kanan - Formulir Kontak -->
+        <div class="col-md-6 right-column">
+          <h4>Contact Us</h4>
+          <form>
+            <div class="form-group">
+              <label for="name">Full name *</label>
+              <input type="text" class="form-control" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input type="email" class="form-control" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Role</label>
+              <select class="form-control" id="subject" name="subject" required>
+                <option value="general"></option>
+                <option value="support"></option>
+                <option value="feedback"></option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

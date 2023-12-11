@@ -1,0 +1,15 @@
+.padding {
+  padding: 3%;
+}
+h2 {
+  top: 127px;
+  left: 125px;
+  width: 210px;
+  height: 53px;
+
+  text-align: left;
+  font: normal normal bold 40px/53px Roboto;
+  letter-spacing: 0px;
+  color: #19345e;
+  opacity: 1;
+}

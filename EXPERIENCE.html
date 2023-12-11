@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <style>
+      .padding {
+        padding: 3%;
+      }
+
+      .experience {
+        background-color: #f4f7fc;
+        padding: 4%;
+        color: #19345e;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+      }
+
+      .subtext {
+        font-size: 17px;
+        font-weight: bold;
+        padding: 10px 21px 2px 21px;
+        text-align: left;
+        color: #19345e;
+      }
+
+      .experience-date {
+        padding: 2px 3% 2px 3%;
+        text-align: left;
+        font: normal normal bold 15px/19px Muli;
+        color: #acacac;
+        opacity: 1;
+      }
+
+      .job-description {
+        padding: 2px 3% 2px 3%;
+        text-align: left;
+        font: normal normal normal 14px/20px "SF Compact Display", sans-serif;
+        color: #19345e;
+      }
+
+      .frontend-engineer {
+        font: normal normal bold 17px/47px Muli;
+        color: #19345e;
+        opacity: 1;
+      }
+
+      .frontend-experience-date {
+        padding: 2px 3% 2px 3%;
+        font: normal normal bold 15px/47px Muli;
+        color: #acacac;
+        opacity: 1;
+      }
+
+      .design-scout {
+        font: normal normal bold 17px/47px Muli;
+        color: #19345e;
+        opacity: 1;
+      }
+
+      .front-end-developer {
+        padding: 2px 3% 2px 3%;
+        text-align: left;
+        font: normal normal normal 14px/20px "SF Compact Display";
+        color: #19345e;
+        opacity: 1;
+      }
+
+      .ui-ux-scout {
+        font: normal normal bold 17px/47px Muli;
+        color: #19345e;
+        opacity: 1;
+      }
+
+      .ui-ux-date {
+        padding: 2px 3% 2px 3%;
+        text-align: left;
+        font: normal normal bold 15px/47px Muli;
+        color: #acacac;
+        opacity: 1;
+      }
+
+      .ui-ux-description {
+        padding: 2px 3% 2px 3%;
+        text-align: left;
+        font: normal normal normal 14px/20px "SF Compact Display";
+        color: #19345e;
+        opacity: 1;
+      }
+
+      .footer {
+        background-color: #19345e;
+        color: white;
+        padding: 3%;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .img-footer {
+        width: 80px;
+        height: auto;
+      }
+
+      .footer-font {
+        font-size: 14px;
+      }
+
+      .social-icons img {
+        margin-right: 10px;
+        width: 20px;
+        height: auto;
+      }
+
+      .vertical-line1 {
+        border-left: 1px solid white;
+        height: 40px;
+        margin: 0 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="gambar/logo-ALTA.png" alt="LOGO" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navexp" href="experience.html">EXPERIENCE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="fs-3 experience">EXPERIENCE</h1>
+      <div>
+        <p class="subtext">FULL STACK - ALTTERA ACADEMY</p>
+        <p class="experience-date">May, 2019 - Present</p>
+        <p class="job-description">
+          Write modern, performant, maintainable code for a diverse array of client and internal projects - Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript,
+          Gatsby, React, Craft, Wordpress, Prismic, and Netlify
+        </p>
+      </div>
+      <div>
+        <p class="subtext frontend-engineer">Frontend Engineer at Apple</p>
+        <p class="frontend-experience-date">May, 2018 -</p>
+        <p class="front-end-developer padding">Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript</p>
+      </div>
+      <div class="ui-ux-scout">UI/UX DESIGN-SCOUT</div>
+      <p class="ui-ux-date">January 2018 - April 2018</p>
+      <p class="ui-ux-description">
+        Developed and shipped highly interactive web applications for Apple Music using Ember.js - Architected and implemented the front-end of Apple Music’s embeddable web player widget, which lets users log in and listen to full songs in
+        the browse
+      </p>
+    </div>
+
+    <div class="footer">
+      <div class="footer-content">
+        <img class="img-footer" src="gambar/logo-ALTA-v2.png" alt="LOGO" />
+        <div>
+          <div class="footer-font">Social Media</div>
+          <div class="social-icons footer-font">
+            <img src="gambar/ic_fb.png" alt="FACEBOOK" />
+            <img src="gambar/ic-twitter.png" alt="TWITTER" />
+            <img src="gambar/ic-instagram.png" alt="INSTAGRAM" />
+            <img src="gambar/ic-linkedin.png" alt="LinkedIn" />
+          </div>
+        </div>
+        <div class="vertical-line1 padding2">
+          <div class="footer-font">Copyright © 2019 Alterra</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
